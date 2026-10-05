@@ -119,7 +119,7 @@ if (mapElement) {
 
     new Circle({
       map: innerMap,
-      center: { lat: 53.327, lng: -113.458 },
+      center: mapElement.center,
       radius: 800,
       strokeColor: '#ff6a00',
       strokeWeight: 2,
