@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+
+body {
+  background-color: #f7f3ea;
+  color: #222;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'Fontdiner Swanky', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #13294b;
+}
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px dashed #ff6a00;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #c2410c;
+}
+
+a:hover {
+  color: #13294b;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+#navbar-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-color: #13294b;
+  border-bottom: 4px solid #ff6a00;
+}
+
+#main-navbar {
+  overflow: hidden;
+}
+
+#main-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#main-navbar ul li {
+  float: left;
+}
+
+#main-navbar ul li a {
+  display: block;
+  padding: 0.8em 1.5em;
+  color: #f7f3ea;
+  font-family: 'Fontdiner Swanky', serif;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+#main-navbar ul li a:hover {
+  background-color: #ff6a00;
+  color: white;
+}
+
+header {
+  clear: both;
+  text-align: center;
+  padding: 2em 5%;
+  background: linear-gradient(to bottom, #d8e0de 0%, #aebfbc 22%, #99afab 33%, #4e5c5a 41%, #4e5c5a 41%, #8ea6a2 50%, #829d98 67%, #4e5c5a 74%, #0e0e0e 100%);
+}
+
+main section {
+  background-color: white;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+main ul {
+  margin-left: 1.5em;
+  list-style-type: square;
+}
+
+main li {
+  margin-bottom: 0.3em;
+}
+
+footer {
+  clear: both;
+  background-color: #13294b;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1.5em;
+  border-top: 4px solid #ff6a00;
+}
+
+#home header {
+  padding: 3em 5%;
+}
+
+#home header h1 {
+  color: white;
+  text-shadow: 3px 3px 0px #ff6a00;
+}
+
+#home header p {
+  color: white;
+  font-size: 1.2em;
+}
+
+#home main {
+  width: 90%;
+  margin: 2em auto;
+}
+
+#home main section {
+  border-top: 6px solid #2f6b3a;
+  overflow: auto;
+}
+
+#home main img {
+  float: right;
+  width: 35%;
+  padding: 5px;
+  background-color: white;
+  border: 4px solid #ff6a00;
+  border-radius: 10px;
+  margin: 0 0 1em 1.5em;
+}
+
+#home ol {
+  margin-left: 2em;
+  list-style-type: upper-roman;
+}
+
+#home ol li {
+  padding: 0.3em;
+  font-weight: bold;
+  color: #2f6b3a;
+}
+
+#mylife header {
+  border-bottom: 3px dotted #b84a62;
+}
+
+#mylife header h1 {
+  color: #b84a62;
+}
+
+#mylife header p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+#mylife main {
+  width: 80%;
+  max-width: 900px;
+  margin: 2em auto;
+}
+
+#mylife main section {
+  text-align: center;
+}
+
+#mylife h2 {
+  border-bottom-color: #b84a62;
+}
+
+#mylife main img {
+  display: block;
+  width: 90%;
+  padding: 10px 10px 40px 10px;
+  margin: 1em auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+#mylife video {
+  width: 100%;
+  border: 4px solid #13294b;
+  border-radius: 12px;
+}
+
+#mylife main ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+#mylife main ul li {
+  display: inline-block;
+  background-color: #fbe4e9;
+  color: #b84a62;
+  border: 1px solid #b84a62;
+  border-radius: 20px;
+  padding: 0.4em 1em;
+  margin: 0.3em;
+}
+
+#resume header {
+  position: relative;
+  width: 880px;
+  min-height: 150px;
+  margin: 40px auto 0;
+  padding: 30px 40px;
+  border-radius: 12px 12px 0px 0px;
+  text-align: left;
+}
+
+#resume header h1 {
+  color: white;
+}
+
+#resume header p {
+  color: white;
+  margin-bottom: 0.2em;
+  text-shadow: 1px 1px 2px black;
+}
+
+#resume header h1 + p {
+  color: #ff6a00;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+#resume header section {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 250px;
+  padding-left: 20px;
+  border-left: 3px solid #ff6a00;
+}
+
+#resume header h2 {
+  color: #ff6a00;
+  text-shadow: 1px 1px 2px black;
+  font-size: 1.1em;
+  border-bottom: none;
+}
+
+#resume address {
+  font-style: normal;
+  font-size: 0.9em;
+}
+
+#resume header a {
+  color: white;
+}
+
+#resume main {
+  width: 880px;
+  margin: 0 auto 40px;
+  padding: 30px 40px;
+  background-color: white;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+#resume main section {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#resume h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+#resume article {
+  border-left: 4px solid #ff6a00;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+#resume article p {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+
+#resume time {
+  color: #2f6b3a;
+  font-weight: bold;
+}
+
+#resume .awards {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+#resume .awards li {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 10px;
+  background-color: #fbefd0;
+  border: 2px solid #e5b53a;
+  font-weight: bold;
+}
+
+#resume .skills {
+  list-style-type: none;
+  margin-left: 0;
+  overflow: auto;
+}
+
+#resume .skills li {
+  float: left;
+  width: 50%;
+}
+
+#resume .availability {
+  list-style-type: none;
+  margin-left: 0;
+  border: 1px solid #ccc;
+}
+
+#resume .availability li {
+  padding: 8px 15px;
+  margin-bottom: 0;
+}
+
+#resume .availability li:nth-child(odd) {
+  background-color: #f7f3ea;
+}
+
+@media screen and (max-width: 48em) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  #home main, #mylife main {
+    width: 95%;
+  }
+
+  #home main img {
+    float: none;
+    display: block;
+    width: 70%;
+    margin: 0 auto 1em;
+  }
+}
