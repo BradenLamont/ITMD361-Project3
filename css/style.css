@@ -17,20 +17,24 @@ h1, h2, h3 {
 
 h1 {
   font-size: 3em;
+  margin: 0 0 0.2em;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: 1.8em;
+  margin-top: 0;
   margin-bottom: 0.5em;
   border-bottom: 2px dashed #ff6a00;
 }
 
 h3 {
   font-size: 1.3em;
+  margin: 0 0 0.2em;
 }
 
 p {
+  margin-top: 0;
   margin-bottom: 1em;
 }
 
@@ -85,6 +89,25 @@ img, video {
   color: white;
 }
 
+#dark-mode-toggle {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.5em 1em;
+  padding: 0.4em 1em;
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Fontdiner Swanky', serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #f7f3ea;
+  color: #13294b;
+}
+
 header {
   clear: both;
   text-align: center;
@@ -101,7 +124,9 @@ main section {
 }
 
 main ul {
+  margin-top: 0;
   margin-left: 1.5em;
+  padding-left: 0;
   list-style-type: square;
 }
 
@@ -120,41 +145,45 @@ footer {
 }
 
 #home header {
-  padding: 3em 5%;
+  padding: 2em 5%;
 }
 
 #home header h1 {
+  font-size: 2em;
   color: white;
   text-shadow: 3px 3px 0px #ff6a00;
 }
 
 #home header p {
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 #home main {
-  width: 90%;
+  width: 95%;
   margin: 2em auto;
 }
 
 #home main section {
+  padding: 1em;
   border-top: 6px solid #2f6b3a;
   overflow: auto;
 }
 
 #home main img {
-  float: right;
-  width: 35%;
+  display: block;
+  width: 70%;
   padding: 5px;
   background-color: white;
   border: 4px solid #ff6a00;
   border-radius: 10px;
-  margin: 0 0 1em 1.5em;
+  margin: 0 auto 1em;
 }
 
 #home ol {
+  margin-top: 0;
   margin-left: 2em;
+  padding-left: 0;
   list-style-type: upper-roman;
 }
 
@@ -179,7 +208,7 @@ footer {
 }
 
 #mylife main {
-  width: 80%;
+  width: 95%;
   max-width: 900px;
   margin: 2em auto;
 }
@@ -200,6 +229,26 @@ footer {
   background-color: white;
   border: 1px solid #ccc;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+#slider button {
+  padding: 0.5em 1.2em;
+  margin: 0 0.3em;
+  background-color: #b84a62;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Fontdiner Swanky', serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#slider button:hover {
+  background-color: #13294b;
+}
+
+#slide-caption {
+  font-style: italic;
 }
 
 #mylife video {
@@ -350,19 +399,153 @@ footer {
   background-color: #f7f3ea;
 }
 
-@media screen and (max-width: 48em) {
-  h1 {
-    font-size: 2.2em;
+#venue main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2em auto;
+}
+
+#venue header h1 {
+  color: white;
+  text-shadow: 3px 3px 0px #13294b;
+}
+
+#venue header p {
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px black;
+}
+
+gmp-map {
+  display: block;
+  width: 100%;
+  height: 450px;
+  margin-bottom: 1em;
+  border: 4px solid #13294b;
+  border-radius: 10px;
+}
+
+gmp-map h3 {
+  color: #13294b;
+}
+
+gmp-map p {
+  color: #222;
+}
+
+#venue address {
+  font-style: normal;
+}
+
+#venue address p {
+  margin-bottom: 0.2em;
+}
+
+.dark-mode {
+  background-color: #1b1e23;
+  color: #e4e4e4;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+  color: #f7f3ea;
+}
+
+.dark-mode a {
+  color: #ff9a4d;
+}
+
+.dark-mode main section {
+  background-color: #2a2e35;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode #dark-mode-toggle {
+  background-color: #f7f3ea;
+  color: #13294b;
+}
+
+#home.dark-mode ol li {
+  color: #7fd68f;
+}
+
+#resume.dark-mode main {
+  background-color: #2a2e35;
+}
+
+#resume.dark-mode article p {
+  color: #b0b0b0;
+}
+
+#resume.dark-mode time {
+  color: #7fd68f;
+}
+
+#resume.dark-mode .awards li {
+  color: #222;
+}
+
+#resume.dark-mode .availability {
+  border-color: #555;
+}
+
+#resume.dark-mode .availability li:nth-child(odd) {
+  background-color: #353a42;
+}
+
+@media screen and (min-width: 40em) {
+  #home header {
+    padding: 3em 5%;
   }
 
-  #home main, #mylife main {
-    width: 95%;
+  #home header h1 {
+    font-size: 2.5em;
+  }
+
+  #home header p {
+    font-size: 1.1em;
+  }
+
+  #home main {
+    width: 90%;
+  }
+
+  #home main section {
+    padding: 1.5em;
   }
 
   #home main img {
-    float: none;
-    display: block;
-    width: 70%;
-    margin: 0 auto 1em;
+    float: right;
+    width: 45%;
+    margin: 0 0 1em 1.5em;
+  }
+
+  #mylife main {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #home header {
+    padding: 4em 10%;
+  }
+
+  #home header h1 {
+    font-size: 3em;
+  }
+
+  #home header p {
+    font-size: 1.2em;
+  }
+
+  #home main {
+    max-width: 1100px;
+  }
+
+  #home main section {
+    padding: 2em;
+  }
+
+  #home main img {
+    width: 35%;
   }
 }
